@@ -1,0 +1,15 @@
+{
+  "name": "Angular Development Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Angular.ng-template"
+      ]
+    }
+  },
+  "forwardPorts": [4200],
+  "postCreateCommand": "[ ! -f angular.json ] && ng new ylja-tijdlijn-energieplan --directory ./ && npm install @angular/material || npm install"
+}

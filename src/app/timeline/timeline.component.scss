@@ -1,0 +1,53 @@
+// .timeline {
+
+//     .timeline-page {
+
+//         .timeline-content{
+//             &.left {
+
+
+//             &.right {
+
+//         }
+//     }
+// }
+
+.timeline {
+    height: 100vh; // Full viewport height
+    overflow-y: scroll; // Vertical scrolling
+    scroll-snap-type: y mandatory; // Enable scroll snapping
+  
+    .timeline-page {
+      height: 100vh; // Fullscreen for each page
+      scroll-snap-align: start; // Snap alignment
+      position: relative; // Required for pseudo-elements
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      // Optional styling
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+  
+      // Add the vertical line
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 4px; // Thickness of the vertical line
+        background-color: #333;
+      }
+  
+      // Line on the left for odd pages
+      &:nth-child(odd)::before {
+        left: 10%; // Adjust left position
+      }
+  
+      // Line on the right for even pages
+      &:nth-child(even)::before {
+        right: 10%; // Adjust right position
+      }
+    }
+  }
+  

@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class TimelineComponent {
 
+  MAX_ITEMS_PER_PAGE: number = 3;
+
 }

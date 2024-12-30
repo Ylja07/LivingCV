@@ -1,24 +1,10 @@
-// .timeline {
-
-//     .timeline-page {
-
-//         .timeline-content{
-//             &.left {
-
-
-//             &.right {
-
-//         }
-//     }
-// }
-
 .timeline {
-    height: 100vh; // Full viewport height
+    height: 91vh; // Full viewport height
     overflow-y: scroll; // Vertical scrolling
     scroll-snap-type: y mandatory; // Enable scroll snapping
   
     .timeline-page {
-      height: 100vh; // Fullscreen for each page
+      height: 100%; // Fullscreen for each page
       scroll-snap-align: start; // Snap alignment
       position: relative; // Required for pseudo-elements
       display: flex;
@@ -35,7 +21,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        width: 4px; // Thickness of the vertical line
+        width: 0.5vw; // Thickness of the vertical line
         background-color: #333;
       }
   

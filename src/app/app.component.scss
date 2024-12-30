@@ -1,0 +1,11 @@
+/* Apply Flexbox to the parent container */
+body, app-root {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  app-toolbar {
+    height: 5vh; /* Toolbar takes up 5% of the viewport height */
+  }

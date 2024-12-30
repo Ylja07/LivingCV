@@ -37,6 +37,54 @@
             right: 10%; // Adjust right position
         }
 
+        // Add clickable dots on the vertical line
+        .dot {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border-radius: 50%; // Make the dot circular
+            cursor: pointer;
+        }
+
+        // Dots on the left for odd pages
+        &:nth-child(odd) {
+            .dot {
+                left: 10%; // Same left position as the vertical line
+            }
+
+            .dot:nth-child(1) {
+                top: 10%; // First dot near the top
+            }
+
+            .dot:nth-child(2) {
+                top: 50%; // Second dot in the middle
+            }
+
+            .dot:nth-child(3) {
+                top: 90%; // Third dot near the bottom
+            }
+        }
+
+        // Dots on the right for even pages
+        &:nth-child(even) {
+            .dot {
+                right: 10%; // Same right position as the vertical line
+            }
+
+            .dot:nth-child(1) {
+                top: 10%; // First dot near the top
+            }
+
+            .dot:nth-child(2) {
+                top: 50%; // Second dot in the middle
+            }
+
+            .dot:nth-child(3) {
+                top: 90%; // Third dot near the bottom
+            }
+        }
+
         // Add the vertical line at the bottom
         &::after {
             content: '';
@@ -47,6 +95,6 @@
             height: 0.5vw; // Height of the line at the bottom
             background-color: #333;
             border-radius: 10px; // Add curvature to the bottom line
-          }
+        }
     }
 }

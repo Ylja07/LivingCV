@@ -1,0 +1,110 @@
+.timeline {
+    height: 91vh; // Full viewport height
+    overflow-y: scroll; // Vertical scrolling
+    scroll-snap-type: y mandatory; // Enable scroll snapping
+
+    .timeline-page {
+        height: 100%; // Fullscreen for each page
+        scroll-snap-align: start; // Snap alignment
+        position: relative; // Required for pseudo-elements
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        // Optional styling
+        background-color: #f9f9f9;
+        // border: 1px solid #ddd;
+
+        // Add the vertical line
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 0.5vw; // Thickness of the vertical line
+            background-color: #333;
+            border-radius: 10px; // Add curvature to the bottom line
+            // border: 2px inset; // 3D effect
+        }
+
+        // Line on the left for odd pages
+        &:nth-child(odd)::before {
+            left: 10%; // Adjust left position
+        }
+
+        // Line on the right for even pages
+        &:nth-child(even)::before {
+            right: 10%; // Adjust right position
+        }
+
+        // Add clickable dots on the vertical line
+        .dot {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border-radius: 50%; // Make the dot circular
+            cursor: pointer;
+        }
+
+        // Dots on the left for odd pages
+        &:nth-child(odd) {
+            .dot {
+                left: 10%; // Same left position as the vertical line
+            }
+
+            .dot:nth-child(1) {
+                top: 10%; // First dot near the top
+            }
+
+            .dot:nth-child(2) {
+                top: 50%; // Second dot in the middle
+            }
+
+            .dot:nth-child(3) {
+                top: 90%; // Third dot near the bottom
+            }
+        }
+
+        // Dots on the right for even pages
+        &:nth-child(even) {
+            .dot {
+                right: 10%; // Same right position as the vertical line
+            }
+
+            .dot:nth-child(1) {
+                top: 10%; // First dot near the top
+            }
+
+            .dot:nth-child(2) {
+                top: 50%; // Second dot in the middle
+            }
+
+            .dot:nth-child(3) {
+                top: 90%; // Third dot near the bottom
+            }
+        }
+
+        // Add the vertical line at the bottom
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%; // Position starts from the same place as the vertical line
+            width: 80%; // 100% - 10% margin on both sides
+            height: 0.5vw; // Height of the line at the bottom
+            background-color: #333;
+            border-radius: 10px; // Add curvature to the bottom line
+        }
+    }
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  

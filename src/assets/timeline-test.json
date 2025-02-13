@@ -1,0 +1,68 @@
+{
+    "timeline": {
+        "years": [
+            {
+                "year": "2024",
+                "months": {
+                    "January": {
+                        "steps": [
+                            {
+                                "title": "Step 1",
+                                "body": "Description for step 1"
+                            },
+                            {
+                                "title": "Step 2",
+                                "body": "Description for step 2"
+                            },
+                            {
+                                "title": "Step 3",
+                                "body": "Description for step 3"
+                            }
+                        ]
+                    },
+                    "February": {
+                        "steps": [
+                            {
+                                "title": "Step 1",
+                                "body": "Description for step 1"
+                            },
+                            {
+                                "title": "Step 2",
+                                "body": "Description for step 2"
+                            },
+                            {
+                                "title": "Step 3",
+                                "body": "Description for step 3"
+                            }
+                        ]
+                    },
+                    "March": {
+                        "steps": [
+                            {
+                                "title": "Step 1",
+                                "body": "Description for step 1"
+                            },
+                            {
+                                "title": "Step 2",
+                                "body": "Description for step 2"
+                            },
+                            {
+                                "title": "Step 3",
+                                "body": "Description for step 3"
+                            }
+                        ]
+                    },
+                    "April": {},
+                    "May": {},
+                    "June": {},
+                    "July": {},
+                    "August": {},
+                    "September": {},
+                    "October": {},
+                    "November": {},
+                    "December": {}
+                }
+            }
+        ]
+    }
+}

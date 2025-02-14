@@ -4,6 +4,6 @@ export interface ITimeline {
     description: string;
     tags: string;
     userId: string; // FK -> User.id
-    displayModeId: string; // FK -> DisplayMode.id
+    displayModeId: string; // FK -> DisplayMode.id (e.g. vertical, horizontal)
   }
   

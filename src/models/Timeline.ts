@@ -1,13 +1,9 @@
-export interface Timeline {
-    timeline: {
-      years: {
-        year: string;
-        months: {
-          [month: string]: {
-            steps?: { title: string; body: string }[];
-          };
-        };
-      }[];
-    };
+export interface ITimeline {
+    id: string;
+    title: string;
+    description: string;
+    tags: string;
+    userId: string; // FK -> User.id
+    displayModeId: string; // FK -> DisplayMode.id
   }
   

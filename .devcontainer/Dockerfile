@@ -13,9 +13,6 @@ RUN mkdir -p /usr/share/git/completion && \
     curl -L https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o /usr/share/git/completion/git-prompt.sh && \
     curl -L https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o /usr/share/git/completion/git-completion.bash
 
-
-RUN git config --global user.name "YljavS" && git config --global user.email "ylja.van.son@alliander.com"
-
 # # Create a non-root user for a better terminal experience
 # RUN useradd -ms /bin/bash devuser
 # USER devuser

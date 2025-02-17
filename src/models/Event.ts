@@ -1,8 +1,10 @@
-export interface Event {
+import { IImage } from "./Images";
+
+export interface IEvent {
     id: string;
     date: Date; // Timestamp
     title: string;
     body: string;
-    timelineId: string; // FK -> Timeline.id
+    images: IImage[];
   }
   

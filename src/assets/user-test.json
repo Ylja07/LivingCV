@@ -1,0 +1,87 @@
+
+{
+    "id": 0,
+    "name": "John Doe",
+    "settings": "string",
+    "timelines": [
+        {
+            "id": 0,
+            "title": "Test - Empty timeline",
+            "description": "An empty timeline, no events",
+            "tags": ["test", "empty"],
+            "displayMode": "vertical",
+            "events": []
+        },
+        {
+            "id": 1,
+            "title": "Test - Normal timeline",
+            "description": "A regular timeline with events and a bigger description. \nIncluding a new line!",
+            "tags": ["test"],
+            "displayMode": "horizontal",
+            "events": [
+                {
+                    "id": 0,
+                    "date": 0,
+                    "title": "Experience 1",
+                    "body": "I have a lot of experience",
+                    "images": [
+                        {
+                            "id": 0,
+                            "altText": "Key",
+                            "file": "https://cdn.aarp.net/content/dam/aarp/auto/2021/11/1140-key-fob.jpg"
+                        },
+                        {
+                            "id": 1,
+                            "altText": "Fuel",
+                            "file": "https://www.proost.online/media/catalog/product/cache/ef9dad93b4951ec3db4b64802c8a36de/1/1/11091687_jack_daniels_100cl_2024.jpg"
+                        }
+                    ]
+                },
+                {
+                    "id": 0,
+                    "date": 0,
+                    "title": "Experience 2",
+                    "body": "This is the same experience, repeated",
+                    "images": [
+                        {
+                            "id": 0,
+                            "altText": "Key",
+                            "file": "https://cdn.aarp.net/content/dam/aarp/auto/2021/11/1140-key-fob.jpg"
+                        },
+                        {
+                            "id": 1,
+                            "altText": "Fuel",
+                            "file": "https://www.proost.online/media/catalog/product/cache/ef9dad93b4951ec3db4b64802c8a36de/1/1/11091687_jack_daniels_100cl_2024.jpg"
+                        }
+                    ]
+                },
+                {
+                    "id": 0,
+                    "date": 0,
+                    "title": "Experience 3",
+                    "body": "This is the same experience, repeated",
+                    "images": [
+                        {
+                            "id": 0,
+                            "altText": "Key",
+                            "file": "https://cdn.aarp.net/content/dam/aarp/auto/2021/11/1140-key-fob.jpg"
+                        },
+                        {
+                            "id": 1,
+                            "altText": "Fuel",
+                            "file": "https://www.proost.online/media/catalog/product/cache/ef9dad93b4951ec3db4b64802c8a36de/1/1/11091687_jack_daniels_100cl_2024.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "documents": [
+        {
+            "id": 0,
+            "title": "Empty file",
+            "type": "txt",
+            "file": ""
+        }
+    ]
+}

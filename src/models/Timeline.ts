@@ -5,7 +5,7 @@ export interface ITimeline {
     id: string;
     title: string;
     description: string;
-    tags: string;
+    tags: string[];
     displayMode: TimelineDisplayModeType // (e.g. vertical, horizontal)
     events: IEvent[];
   }
